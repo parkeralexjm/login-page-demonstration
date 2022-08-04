@@ -1,6 +1,6 @@
 @font-face {
     font-family: nightmarePillFont;
-    src: url(nightmarepills.woff);
+    src: url(asset/nightmarepills.woff);
 }
 /* declare color variables to use throughout stylesheet */
 :root {

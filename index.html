@@ -9,19 +9,24 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
+    
     <div class="container">
-        <div class="splash">
-            <img src="Volcano.jpg" class="titleBackground">
+        <!--div for the left side of the page-->
+        <div class="splash"> 
+            <img src="asset/Volcano.jpg" class="titleBackground">
             <div class="title">
-                <img src="IgnisRune.svg" class="runeLogo">
+                <img src="asset/IgnisRune.svg" class="runeLogo">
                 <h1 class="textTitle">IGNIS</h1>
             </div>
         </div>
+        <!--div for the right side of the page-->
         <div class="content">
+            <!--div to control the introduction paragraph-->
             <div class="intro">
                 <p class="contentText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p class="contentText">Sign up now to get started.</p>
             </div>
+            <!--controls the form area of the page-->
             <div class="signup">
                 <form action="#" method="post">
                     <legend class="formTitle">Let's do this!</legend>
@@ -46,12 +51,12 @@
                         <br style="clear:both;" />
                         <div class="inputField" style="float:left;margin-right:20px;">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" minlength="8" placeholder=" " required>
+                            <input class="error" type="password" id="password" name="password" minlength="8" placeholder=" " required>
                         </div>
 
                         <div class="inputField" style="float:left;">
                             <label for="passwordConfirm">Confirm password</label>
-                            <input type="password" id="passwordConfirm" name="passwordConfirm"  minlength="8" placeholder=" " required>
+                            <input class="error" type="password" id="passwordConfirm" name="passwordConfirm"  minlength="8" placeholder=" " required>
                         </div>
                         <br style="clear:both;" />
                         <div>
