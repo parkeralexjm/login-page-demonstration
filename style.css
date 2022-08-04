@@ -10,11 +10,6 @@
     --main-color-light: #8f8e8e;
     --accent-color: rgb(194, 149, 24);
 }
-/* remove padding and margin
-body {
-    margin: 0;
-    padding: 0;
-}
 
 /* set the width, height and alignment of the containers*/
 .container {
@@ -83,26 +78,22 @@ body {
     background-color: var(--main-color);
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.intro {
-
-}
-
+/* spacing for the introduction paragraph */
 .contentText {
     font-size: 1.15rem;
     margin: 2vh;
 }
-
+/* coloring and sizing for the form backdrop */
 .signup {
     background-color: var(--main-color-light);
     box-shadow: 0px 3px 10px var(--main-color-dark);
     width: 100%;
 }
-
-.formTitle {
-    margin:10px 0 0 10px;
+/* spacing for the form title*/
+legend {
+    margin:20px 0 10px 20px;
 }
-
+/* styling for the input fields */
 input {
     display:block;
     width: 19vw;
@@ -112,13 +103,22 @@ input {
     box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.1);
     background-color: #8f8e8e;
 }
-
+/* change color on focus of input fields */
 input:focus {
     outline: var(--accent-color) solid 2px;
 }
+/* validation lines to provide feedback to the user */
+input:valid:not(:focus):not(:placeholder-shown) {
+    border-color: green;
+}
 
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+}
+
+ /* spacing for the input fields */
 .inputField {
-    margin:10px;
+    margin:10px 20px;
 }
 
 /* styling the Create Account button */
@@ -130,14 +130,15 @@ button {
     width: max(200px, 10vw);
     box-shadow: 5px 0 15px 5px rgba(0,0,0,0.1);
     font-size: 1.2rem;
-    margin:10px;
+    margin:20px;
+}
+
+/* spacing for the account login prompt */
+.loginPrompt {
+    margin:20px
 }
 
 /* customising the color of the link for login */
-.loginPrompt {
-    margin:10px
-}
-
 .loginPrompt > a:link{
     color: darkred;
 }
