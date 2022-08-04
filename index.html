@@ -10,14 +10,57 @@
 </head>
 <body>
     <div class="container">
-        <img src="Volcano.jpg" id="titleBackground">
-        <div class="title">
-            <img src="IgnisRune.svg" id="runeLogo">
-            <h1 class="textTitle">IGNIS</h1>
+        <div class="splash">
+            <img src="Volcano.jpg" class="titleBackground">
+            <div class="title">
+                <img src="IgnisRune.svg" class="runeLogo">
+                <h1 class="textTitle">IGNIS</h1>
+            </div>
         </div>
         <div class="content">
-            <div class="wrapper">
+            <div class="intro">
+                <p class="contentText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p class="contentText">Sign up now to get started.</p>
+            </div>
+            <div class="signup">
+                <form action="#" method="post">
+                    <legend class="formTitle">Let's do this!</legend>
+                    <fieldset>
+                        <div style="float:left;margin-right:20px;">
+                            <label for="firstName">First Name: </label>
+                            <input type="text" id="firstName" name="firstName" placeholder="First name..." required>
+                        </div>
+                        <div style="float:left;">
+                            <label for="lastName">Last Name: </label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last name..." required>
+                        </div>
+                        <br style="clear:both;" />
+                        <div style="float:left;margin-right:20px;">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div style="float:left;">
+                            <label for="emailConfirm">Confirm email: </label>
+                            <input type="email" id="emailConfirm" name="emailConfirm" required>
+                        </div>
+                    </fieldset>
 
+                    <fieldset>
+                        <div style="float:left;margin-right:20px;">
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div style="float:left;">
+                            <label for="passwordConfirm">Confirm password: </label>
+                            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Create account</button>
+                </form>
+                <div>
+                    <p class="loginPrompt">Already have an account? <a href="index.html">login</a></p>
+                </div>
             </div>
         </div>
     </div>
