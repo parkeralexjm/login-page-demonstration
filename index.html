@@ -25,42 +25,41 @@
             <div class="signup">
                 <form action="#" method="post">
                     <legend class="formTitle">Let's do this!</legend>
-                    <fieldset>
-                        <div style="float:left;margin-right:20px;">
-                            <label for="firstName">First Name: </label>
+
+                        <div class="inputField" style="float:left;margin-right:20px;">
+                            <label for="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" placeholder="First name..." required>
                         </div>
-                        <div style="float:left;">
-                            <label for="lastName">Last Name: </label>
+                        <div class="inputField" style="float:left;">
+                            <label for="lastName">Last Name</label>
                             <input type="text" id="lastName" name="lastName" placeholder="Last name..." required>
                         </div>
                         <br style="clear:both;" />
-                        <div style="float:left;margin-right:20px;">
-                            <label for="email">Email: </label>
+                        <div class="inputField" style="float:left;margin-right:20px;">
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div style="float:left;">
-                            <label for="emailConfirm">Confirm email: </label>
+                        <div class="inputField" style="float:left;">
+                            <label for="emailConfirm">Confirm email</label>
                             <input type="email" id="emailConfirm" name="emailConfirm" required>
                         </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <div style="float:left;margin-right:20px;">
-                            <label for="password">Password: </label>
+                        <br style="clear:both;" />
+                        <div class="inputField" style="float:left;margin-right:20px;">
+                            <label for="password">Password</label>
                             <input type="password" id="password" name="password" required>
                         </div>
 
-                        <div style="float:left;">
-                            <label for="passwordConfirm">Confirm password: </label>
+                        <div class="inputField" style="float:left;">
+                            <label for="passwordConfirm">Confirm password</label>
                             <input type="password" id="passwordConfirm" name="passwordConfirm" required>
                         </div>
-                    </fieldset>
-                    <button type="submit">Create account</button>
+                        <br style="clear:both;" />
+                        <div>
+                            <button class="submitButton" type="submit">Create account</button>
+                            <p class="loginPrompt">Already have an account? <a href="index.html">login</a></p>
+                        </div>
                 </form>
-                <div>
-                    <p class="loginPrompt">Already have an account? <a href="index.html">login</a></p>
-                </div>
+
             </div>
         </div>
     </div>

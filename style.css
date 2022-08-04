@@ -2,14 +2,15 @@
     font-family: nightmarePillFont;
     src: url(nightmarepills.woff);
 }
-
+/* declare color variables to use throughout stylesheet */
 :root {
     background-color: var(--main-color-dark);
     --main-color-dark: #404040;
     --main-color: #757575;
     --main-color-light: #8f8e8e;
+    --accent-color: rgb(194, 149, 24);
 }
-
+/* remove padding and margin
 body {
     margin: 0;
     padding: 0;
@@ -38,13 +39,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position:static;
 }
 
 /* style the container for the title and logo */
 .title {
     display: flex;
     width: 40vh;
-    height: clamp(0, 15vh, 0);
+    height: clamp(50px, 10vw, 100px);
     background-color: #a3a3a39f;
     position: absolute;
     align-items: center;
@@ -53,8 +55,7 @@ body {
 
 /* change the size of the logo to be adaptive */
 .runeLogo {
-    width: clamp(0.25rem, 6vw, 4rem);
-    height: clamp(0.25rem, 6vw, 4rem);
+    height: 5vh;
 }
 
 /* style the title text of the title*/
@@ -66,51 +67,78 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
-    padding-left: 20px;
-    font-size: clamp(0.25rem, 6vw, 4rem);
+    padding-left: 3vh;
+    font-size: max(24px, 7vh);
 }
 
 /* style the content area of the page */
 .content {
-    width: max(400px, 60vw);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: max(500px, 50vw);
     height: 75vh;
     background-color: var(--main-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .intro {
-    margin: 3vh;
+
 }
 
 .contentText {
     font-size: 1.15rem;
+    margin: 2vh;
 }
 
 .signup {
     background-color: var(--main-color-light);
     box-shadow: 0px 3px 10px var(--main-color-dark);
-    padding: 3vh;
-
+    width: 100%;
 }
 
 .formTitle {
-    margin: 3vh 0;
+    margin:10px 0 0 10px;
 }
 
 input {
     display:block;
-    width: 20vw;
-    padding: 5px;
-    border: 0 solid var(--main-color-dark);
+    width: 19vw;
+    padding: 10px;
+    border: 2px solid var(--main-color-dark);
     border-radius: 5px;
-    box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.1);
+    background-color: #8f8e8e;
 }
 
-label {
-    display: block;
+input:focus {
+    outline: var(--accent-color) solid 2px;
 }
 
-.loginPrompt > a:link {
+.inputField {
+    margin:10px;
+}
+
+/* styling the Create Account button */
+button {
+    background-color: var(--accent-color);
+    border: 2px solid rgb(110, 61, 1);
+    border-radius: 12px;
+    height: max(20px, 5vh);
+    width: max(200px, 10vw);
+    box-shadow: 5px 0 15px 5px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+    margin:10px;
+}
+
+/* customising the color of the link for login */
+.loginPrompt {
+    margin:10px
+}
+
+.loginPrompt > a:link{
     color: darkred;
 }
 
@@ -124,5 +152,4 @@ label {
 
 .loginPrompt > a:active {
     color: orange;
-
 }
